@@ -25,7 +25,7 @@ public class SpringSecurityConfiguration {
 //	public InMemoryUserDetailsManager createUserDetailsManager() {
 //		UserDetails userDetails = User.withDefaultPasswordEncoder()
 //
-//				.username("vtech")
+//				.username("harini")
 //
 //				.password("123")
 //
@@ -46,7 +46,7 @@ public class SpringSecurityConfiguration {
 //
 //				.passwordEncoder(passwordEncoder)
 //
-//				.username("vtech")
+//				.username("harini")
 //
 //				.password("123")
 //

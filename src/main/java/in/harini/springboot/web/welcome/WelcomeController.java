@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @SessionAttributes("name")
 public class WelcomeController {
 
-	// GET http://localhost:8081/
+	// GET http://localhost:2105/
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String gotoWelcomePage(ModelMap model) {
 		String username = getLoggedInUsername();

@@ -35,7 +35,7 @@ public class TodoController {
 		return "listTodos";
 	}
 
-	// GET http://localhost:8081/add-todo
+	// GET http://localhost:2105/add-todo
 	@RequestMapping(value = "add-todo", method = RequestMethod.GET)
 	public String showNewTodoPage(ModelMap model) {
 		String username = getLoggedInUsername();
@@ -44,7 +44,7 @@ public class TodoController {
 		return "todo";
 	}
 
-	// POST http://localhost:8081/add-todo
+	// POST http://localhost:2105/add-todo
 	@RequestMapping(value = "add-todo", method = RequestMethod.POST)
 	public String addNewTodo(ModelMap model, @Valid Todo todo, BindingResult result) {
 
@@ -58,7 +58,7 @@ public class TodoController {
 		return "redirect:list-todos";
 	}
 
-	// GET http://localhost:8081/delete-todo
+	// GET http://localhost:2105/delete-todo
 	@RequestMapping(value = "delete-todo", method = RequestMethod.GET)
 	public String deleteTodo(@RequestParam int id) {
 		// Delete todo
@@ -67,7 +67,7 @@ public class TodoController {
 		return "redirect:list-todos";
 	}
 
-	// GET http://localhost:8081/update-todo
+	// GET http://localhost:2105/update-todo
 	@RequestMapping(value = "update-todo", method = RequestMethod.GET)
 	public String showUpdateTodoPage(@RequestParam int id, ModelMap model) {
 		// String username = (String) model.get("name");
@@ -78,7 +78,7 @@ public class TodoController {
 		return "todo";
 	}
 
-	// POST http://localhost:8081/update-todo
+	// POST http://localhost:2105/update-todo
 	@RequestMapping(value = "update-todo", method = RequestMethod.POST)
 	public String updateTodo(ModelMap model, @Valid Todo todo, BindingResult result) {
 
